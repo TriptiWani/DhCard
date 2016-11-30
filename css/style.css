@@ -2,7 +2,7 @@
 
 body{
   font-family: 'Slabo 27px', serif;
-  padding: 0 10em 0 10em;
+  padding: 0 8em 0 8em;
 }
 .main_title{
   color:rgba(68, 85, 116, 1);
@@ -45,7 +45,7 @@ body{
   border: 1px solid black;
 }
 .preview-top{
-  min-height: 6vh;
+  /*min-height: 6vh;*/
   font-weight: bold;
   color:white;
   background-color: rgba(68, 85, 116, 1);
@@ -97,12 +97,7 @@ hr{
 
 @media  screen and (min-width: 320px) {
   .main_preview{
-    height: 13%;
-  }
-}
-@media  screen and (min-width: 320px) {
-  .main_preview{
-    height: 43%;
+    height: 16%;
   }
 }
 @media screen and (min-width: 768px){
@@ -110,13 +105,19 @@ hr{
   height: 22vh;
   }
 }
+
+@media (min-width: 768px){
+  .main_preview{
+  height: 17vh;
+  }
+}
 @media screen and (min-width: 992px) {
   .main_preview{
-    height: 30%;
+    height: 38%;
   }
 }
 @media only screen and (min-width: 1200px){
   .main_preview{
-    height: 25vh;
+    height: 28vh;
   }
 }
