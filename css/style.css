@@ -32,7 +32,7 @@ body{
 }
 .name_header{
   position: relative;
-  padding:1em;
+  padding:0.5em;
   font-weight: bolder;
   font-size: 25px;
 }
@@ -111,7 +111,7 @@ hr{
 
 @media (min-width: 768px){
   .main_preview{
-  height: 17vh;
+  height: 30vh;
   }
 }
 @media screen and (min-width: 992px) {
