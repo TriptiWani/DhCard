@@ -1,16 +1,20 @@
 $(document).ready(function(){
   $('#first_name').on('keyup',function(){
     $("#name").html($(this).val());
-    // $('.name_header').css({
-    //   'padding':'10px'
-    // });
+    if($(this).val() !== ''){
+      $('.name_header').removeClass('form-group');
+    }else{
+      $('.name_header').addClass('form-group');
+    }
   });
   $('#last_name').on('keyup',function(){
     var firstName = $("#first_name").val();
     $("#name").html(firstName+ ' ' + $(this).val());
-    // $('.name_header').css({
-    //   'padding':'10px'
-    // });
+    // if($(this).val() !== ''){
+    //   $('.name_header').removeClass('form-group');
+    // }else{
+    //   $('.name_header').addClass('form-group');
+    // }
   });
   $('#emailId').on('keyup',function(){
     $(".emailId").html($(this).val());
