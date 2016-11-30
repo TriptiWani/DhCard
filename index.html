@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <title>UIDEV Exercise</title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/style.css">
+      <script src="js/jquery.js"></script>
+      <script src="js/main.js"></script>
+  </head>
+  <body>
+      <div class="row">
+          <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+              <div class="form_details col-xs-offset-1 col-sm-offset-1 col-md-offset-1 col-lg-offset-1">
+                  <h2 class="main_title">hCard Builder</h2>
+                  <form action="">
+                      <div class="header_bar">
+                          <p>
+                              PERSONAL DETAILS
+                          </p>
+                          <hr />
+                      </div>
+
+                      <fieldset class="name_field">
+                        <div class="given_name">
+                          <div class="form-group col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                              <label for="first_name">GIVEN NAME</label>
+                              <input type="text" class="form-control" id="first_name" placeholder="John" required>
+                          </div>
+                        </div>
+                        <div class="last_name">
+                          <div class="form-group col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                              <label for="last_name">SURNAME</label>
+                              <input type="text" id="last_name" class="form-control" placeholder="Abc">
+                          </div>
+                        </div>
+                      </fieldset>
+                      <div class="name_field">
+                          <div class="form-group col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                              <label for="first_name">GIVEN NAME</label>
+                              <input type="text" class="form-control" id="first_name" placeholder="John" required>
+                          </div>
+                          <div class="form-group col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                              <label for="last_name">SURNAME</label>
+                              <input type="text" id="last_name" class="form-control" placeholder="Abc">
+                          </div>
+                      </div>
+                      <div class="contact_field">
+                          <div class="form-group col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                              <label for="emailId">EMAIL</label>
+                              <input type="text" id="emailId" class="form-control" placeholder="abc@xyz.com" required>
+                          </div>
+                          <div class="form-group col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                              <label for="phone">PHONE</label>
+                              <input type="text" id="phone" class="form-control" placeholder="1234567890">
+                          </div>
+                      </div>
+                      <div class="header_bar">
+                          <p>
+                              ADDRESS
+                          </p>
+                          <hr />
+                      </div>
+                      <fieldset class="address_field">
+                          <fieldset class="housename_street">
+                              <div class="form-group col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                  <label for="house_name">HOUSE NAME OR #</label>
+                                  <input type="text" id="house_name" class="form-control" placeholder="56">
+                              </div>
+                              <div class="form-group col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                  <label for="street">STREET</label>
+                                  <input type="text" id="street" class="form-control" placeholder="Campbell St.">
+                              </div>
+                          </fieldset>
+                      </fieldset>
+                      <fieldset class="suburb_state">
+                          <div class="form-group col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                              <label for="suburb">SUBURB</label>
+                              <input type="text" id="suburb" class="form-control" placeholder="Darlinghurst"required>
+                          </div>
+                          <div class="form-group col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                              <label for="state">STATE</label>
+                              <input type="text" id="state" class="form-control" placeholder="NSW" required>
+                          </div>
+                      </fieldset>
+                      <fieldset class="postcode_country">
+                          <div class="form-group col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                              <label for="postcode">POSTCODE</label>
+                              <input type="text" id="postcode" class="form-control" placeholder="2150" required>
+                          </div>
+                          <div class="form-group col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                              <label for="country">COUNTRY</label>
+                              <input type="text" id="country" class="form-control" placeholder="Australia"required>
+                          </div>
+                      </fieldset>
+                      <fieldset class="button_controls">
+                        <div class="form-group col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                            <button type="button" class="btn btn-primary btn-lg form-control avatar">Upload Avatar</button>
+                        </div>
+                        <div class="form-group col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                            <button type="button" class="btn btn-primary btn-lg form-control hcard">Create hCard</button>
+                        </div>
+                      </fieldset>
+                  </form>
+              </div>
+          </div>
+          <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 ">
+              <div class="form_preview">
+                  <p class="preview_headline">HCARD PREVIEW</p>
+                  <div class="main_preview">
+                      <div class="preview-top">
+                        <fieldset>
+                          <div class="name_header form-group">
+                            <h1 class="name_title" id="name"></h1>
+                            <img class="preview_image" src="images/contact.png" alt="">
+                          </div>
+                        </fieldset>
+                      </div>
+                      <div class="preview_block col-xs-offset-1 col-sm-offset-1 col-md-offset-1 col-lg-offset-1 col-xs-10 col-sm-10 col-md-10 col-lg-10">
+                          <div class="email">
+                              <div class="preview_title col-xs-3 col-sm-3 col-md-2 col-lg-2">EMAIL</div>
+                              <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 emailId"></div>
+                          </div>
+                          <hr class="horizontal_rule">
+                          <div class="phone">
+                              <div class="preview_title col-xs-3 col-sm-3 col-md-2 col-lg-2">PHONE</div>
+                              <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 phoneNumber"></div>
+                          </div>
+                          <hr class="horizontal_rule">
+                          <div class="address">
+                              <div class="preview_title col-xs-3 col-sm-3 col-md-2 col-lg-2">ADDRESS</div>
+                              <div class="col-xs-7 col-sm-7 col-md-8 col-lg-8 addressLine1"></div>
+                              <hr class="horizontal_rule">
+                              <div class="address2">
+                                  <span class="col-xs-7 col-sm-7 col-md-8 col-lg-8 col-xs-offset-3 col-sm-offset-3 col-md-offset-2 col-lg-offset-2 addressLine2"></span>
+                              </div>
+                          </div>
+                          <hr class="horizontal_rule">
+                          <div class="postcode_country_details">
+                              <div class="postcode col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                  <div class="preview_title col-xs-6 col-sm-6 col-md-4 col-lg-4">POSTCODE</div>
+                                  <div class="col-xs-6 col-sm-6 col-md-8 col-lg-8 postCode"></div>
+                              </div>
+                              <div class="country col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                  <div class="preview_title col-xs-5 col-sm-5 col-md-4 col-lg-4">COUNTRY</div>
+                                  <div class="col-xs-7 col-sm-7 col-md-8 col-lg-8 countryName"></div>
+                              </div>
+                          </div>
+                          <hr class="horizontal_rule">
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </body>
+</html>

@@ -1,0 +1,122 @@
+@import url(https://fonts.googleapis.com/css?family=Slabo+27px);
+
+body{
+  font-family: 'Slabo 27px', serif;
+  padding: 0 10em 0 10em;
+}
+.main_title{
+  color:rgba(68, 85, 116, 1);
+}
+.postcode, .country {
+  padding: 0px !important;
+}
+
+.main_preview{
+  border: 1px solid gray;
+  -moz-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+  height:auto;
+  background-color: white;
+}
+.form_details{
+  /*padding-top: 20vh;*/
+}
+.form_preview{
+  margin:2em;
+  padding: 10px;
+  background-color: rgba(247, 246, 246, 0.82);
+  height: 100vh;
+  text-align: margin 0 auto;
+  padding-top: 25vh;
+}
+.name_header{
+  position: relative;
+  padding:1em;
+  font-weight: bolder;
+  font-size: 25px;
+}
+.preview_image{
+  position:absolute;
+  top: 1vh;
+  right: 1vh;
+  width: 7vw;
+  height: 10.5vh;
+  border: 1px solid black;
+}
+.preview-top{
+  min-height: 6vh;
+  font-weight: bold;
+  color:white;
+  background-color: rgba(68, 85, 116, 1);
+  margin-bottom: 1em;
+}
+.header_bar > p{
+  margin-bottom: 0px;
+  color:rgba(128, 128, 128, 0.52);
+}
+label{
+  font-weight: normal;
+}
+hr{
+  margin-top:0px;
+}
+.preview_block  div{
+  margin-bottom: 0px;
+}
+.address2{
+  min-height: 15px;
+}
+.preview_headline{
+  text-align: right;
+  color:rgba(128, 128, 128, 0.52);
+}
+.row > div {
+  padding:0px;
+}
+.form_preview > div{
+  margin: 0px;
+}
+.horizontal_rule{
+  width: 100%;
+  margin-bottom: 0px !important;
+}
+.button_controls   button{
+  padding:4px 8px;
+  /*border rgba(33, 150, 243, 0.81) */
+
+}
+.avatar {
+  background-color: #8e949f;
+  border-color: #8e949f;
+}
+.hcard{
+  background-color: rgba(33, 150, 243, 0.81);
+  border-color: rgba(33, 150, 243, 0.81);
+}
+
+@media  screen and (min-width: 320px) {
+  .main_preview{
+    height: 13%;
+  }
+}
+@media  screen and (min-width: 320px) {
+  .main_preview{
+    height: 43%;
+  }
+}
+@media screen and (min-width: 768px){
+  .main_preview{
+  height: 22vh;
+  }
+}
+@media screen and (min-width: 992px) {
+  .main_preview{
+    height: 30%;
+  }
+}
+@media only screen and (min-width: 1200px){
+  .main_preview{
+    height: 25vh;
+  }
+}
