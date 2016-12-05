@@ -42,5 +42,12 @@ $(document).ready(function(){
   $('#country').on('keyup',function(){
     $(".countryName").html($(this).val());
   });
+  $('.avatar').on('click',function(){
+    $('.preview_image').toggleClass('avatarUploaded');
+    console.log('clicked');
+    // $('.preview_image').css({
+    //   'src':'images/woman.png'
+    // });
+  });
 
 });

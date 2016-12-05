@@ -7,6 +7,9 @@ body{
 .main_title{
   color:rgba(68, 85, 116, 1);
 }
+.card_left{
+  margin-top: 5em;
+}
 .postcode, .country {
   padding: 0px !important;
 }
@@ -19,9 +22,7 @@ body{
   height:auto;
   background-color: white;
 }
-.form_details{
-  /*padding-top: 20vh;*/
-}
+
 .form_preview{
   margin:2em;
   padding: 10px;
@@ -37,15 +38,20 @@ body{
   font-size: 25px;
 }
 .preview_image{
-  position:absolute;
+  /*position:absolute;
   top: 1vh;
   right: 1vh;
   width: 7vw;
   height: 10.5vh;
+  border: 1px solid black;*/
+  position: absolute;
+  top: 8%;
+  right: 3%;
+  width: 15%;
+  height: 140%;
   border: 1px solid black;
 }
 .preview-top{
-  /*min-height: 6vh;*/
   font-weight: bold;
   color:white;
   background-color: rgba(68, 85, 116, 1);
@@ -84,7 +90,6 @@ hr{
 }
 .button_controls   button{
   padding:4px 8px;
-  /*border rgba(33, 150, 243, 0.81) */
 
 }
 .avatar {
@@ -94,6 +99,9 @@ hr{
 .hcard{
   background-color: rgba(33, 150, 243, 0.81);
   border-color: rgba(33, 150, 243, 0.81);
+}
+.avatarUploaded{
+  content:url('../images/contact.png')
 }
 
 @media  screen and (min-width: 320px) {
