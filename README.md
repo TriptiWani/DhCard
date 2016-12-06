@@ -2,6 +2,28 @@
 
 ## Task: hCard Builder
 
+### Features:
+* As the form is filled using the left pane, preview is automatically updated.(using jQuery)
+* Earlier used a dedicated function for every 'keyup' action on the fields, later on create a function 'updateContent', so that same stuff is not repeated and the funciton is reused for every action (using Event Delegation)
+* 'Create hCard' button does not perform any action as it does not have a backend.
+* 'Update Avatar' button updates the thumbnail image in the right preview pane.
+** Assumption: when a user click this button, the preview thumbnail changes from a male thumbnail to a female thumbnail and vice versa.
+* The form is responsive with different screen widths, i.e. Large screens, medium screens, small screens and mobile screens(using BootStrap)
+* The form is  compatible across browsers.
+* For simplicity, CSS is used. Can use SASS as well
+
+
+### Duration:
+Spent ~4 hours(Nov 30) + 0.5 hours(Dec 6) as was waiting for a clarification from Hollie.
+
+### Accessed at:
+The form is uploaded at gh-pages as well, in order to test the responsiveness.
+
+=========================================================
+# Frontend Development Test
+
+## Task: hCard Builder
+
 [hCard is a simple, open format for publishing people, companies and
 organizations on the web](http://microformats.org/wiki/hCard).
 

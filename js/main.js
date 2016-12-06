@@ -1,53 +1,70 @@
 $(document).ready(function(){
-  $('#first_name').on('keyup',function(){
-    $("#name").html($(this).val());
-    if($(this).val() !== ''){
-      $('.name_header').removeClass('form-group');
-    }else{
-      $('.name_header').addClass('form-group');
-    }
+  // this function will update the target field with the value which is being typed in
+  var updateContent = function(sourceVal,targetField){
+      $(targetField).html(sourceVal);
+  };
+  //updating the first name
+  $('form').on('keyup','#first_name',function(){
+      updateContent($(this).val(),'#name');
+      if($(this).val() !== ''){
+        $('.name_header').removeClass('form-group');
+      }else{
+        $('.name_header').addClass('form-group');
+      }
   });
-  $('#last_name').on('keyup',function(){
+  // Concatenating the last name
+  $('form').on('keyup','#last_name',function(){
     var firstName = $("#first_name").val();
     $("#name").html(firstName+ ' ' + $(this).val());
-    // if($(this).val() !== ''){
-    //   $('.name_header').removeClass('form-group');
-    // }else{
-    //   $('.name_header').addClass('form-group');
-    // }
   });
-  $('#emailId').on('keyup',function(){
-    $(".emailId").html($(this).val());
+
+  // Updating the email id
+  $('form').on('keyup','#emailId',function(){
+      updateContent($(this).val(),'.emailId');
   });
-  $('#phone').on('keyup',function(){
-    $(".phoneNumber").html($(this).val());
+
+  // updating the address Line1
+  $('form').on('keyup','#house_name',function(){
+      updateContent($(this).val(),'.addressLine1');
   });
-  $('#house_name').on('keyup',function(){
-    $(".addressLine1").html($(this).val());
-  });
-  $('#street').on('keyup',function(){
+
+  // Adding street details to the address
+  $('form').on('keyup','#street',function(){
     var houseName = $("#house_name").val();
     $(".addressLine1").html(houseName+ ' ' + $(this).val());
   });
-  $('#suburb').on('keyup',function(){
-    $(".addressLine2").html($(this).val());
+
+  // Adding suburb details to address Line2
+  $('form').on('keyup','#suburb',function(){
+      updateContent($(this).val(),'.addressLine2');
   });
-  $('#state').on('keyup',function(){
+
+  // adding phone number details
+  $('form').on('keyup','#phone',function(){
+      updateContent($(this).val(),'.phoneNumber');
+  });
+
+  // adding state details
+  $('form').on('keyup','#state',function(){
     var suburb = $("#suburb").val();
     $(".addressLine2").html(suburb+ ' ' + $(this).val());
   });
-  $('#postcode').on('keyup',function(){
-    $(".postCode").html($(this).val());
+
+  // adding postcode details
+  $('form').on('keyup','#postcode',function(){
+      updateContent($(this).val(),'.postCode');
   });
-  $('#country').on('keyup',function(){
-    $(".countryName").html($(this).val());
+
+  // adding country details
+  $('form').on('keyup','#country',function(){
+      updateContent($(this).val(),'.countryName');
   });
+
+  // updating the thumbnail image
   $('.avatar').on('click',function(){
     $('.preview_image').toggleClass('avatarUploaded');
-    console.log('clicked');
-    // $('.preview_image').css({
-    //   'src':'images/woman.png'
-    // });
   });
+
+
 
 });

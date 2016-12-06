@@ -38,12 +38,6 @@ body{
   font-size: 25px;
 }
 .preview_image{
-  /*position:absolute;
-  top: 1vh;
-  right: 1vh;
-  width: 7vw;
-  height: 10.5vh;
-  border: 1px solid black;*/
   position: absolute;
   top: 8%;
   right: 3%;
@@ -101,7 +95,7 @@ hr{
   border-color: rgba(33, 150, 243, 0.81);
 }
 .avatarUploaded{
-  content:url('../images/contact.png')
+  content:url('../images/woman.png')
 }
 
 @media  screen and (min-width: 320px) {
@@ -111,18 +105,13 @@ hr{
 }
 @media screen and (min-width: 768px){
   .main_preview{
-  height: 22vh;
+  height: 14vh;
   .button_controls button{
     font-size: 14px;
   }
   }
 }
 
-@media (min-width: 768px){
-  .main_preview{
-  height: 30vh;
-  }
-}
 @media screen and (min-width: 992px) {
   .main_preview{
     height: 38%;
