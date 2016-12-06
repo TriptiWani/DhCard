@@ -18,7 +18,7 @@ Spent ~4 hours(Nov 30) + 0.5 hours(Dec 6) as was waiting for a clarification fro
 
 ### Accessible at:
 The form is uploaded at gh-pages as well, in order to test the responsiveness.
-Click [here](https://triptiwani.github.io/DhCard/index.html) to access it.
+Click [here](https://triptiwani.github.io/hCards/index.html) to access it.
 
 =========================================================
 # Frontend Development Test
